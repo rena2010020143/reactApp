@@ -1,2 +1,2 @@
-# reactApp2
+# reactApp
 hello world
