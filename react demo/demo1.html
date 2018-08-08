@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="build/react.min.js"></script>
+    <script src="build/react-dom.min.js"></script>
+    <script src="build/browser.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+     var commentBox = React.createClass({
+        render:function(){
+          return (
+              <div className="commentBox">
+                <h1>comments</h1>
+                <commentList />
+                <commentFrom />
+              </div>
+            )
+        }
+     });
+
+     var commentList = React.createClass({
+      render:function(){
+        return(
+            <div className="commentList">
+              这是commentList
+            </div>
+          )
+      }
+     });
+
+     var commentFrom = React.createClass({
+       render:function(){
+         return(
+            <div className="commentFrom">
+              这是commentFrom
+            </div>
+            )
+       }
+     });
+
+     ReactDOM.render(
+        <commentBox />;
+        document.getElementById("content");
+
+      );
+    </script>
+  </body>
+</html>
